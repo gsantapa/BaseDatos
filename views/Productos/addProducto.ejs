@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %> 
+<section>
+  <form action="addProducto" method="post">
+    <div>
+      <h2>Agregar Estampillas</h2>  
+ 
+      <div class="input">
+        <label for="titulo">Titulo:</label>
+        <input type="text" name="titulo" placeholder="Ingrese Titulo Estampilla" id="titulo" required> 
+      </div>  
+      <div class="input">
+        <label for="desc_reducida">Des.Red.:</label>
+        <input type="text" name="desc_reducida" placeholder="Ingrese descripcion reducida" id="desc_reducida" required> 
+      </div>  
+      <div class="input">
+        <label for="comentario">Historia:</label>
+        <input type="text" name="comentario" placeholder="Ingrese comentarios " id="comentario" required> 
+      </div>  
+      <div class="input">
+        <label for="fec_emision">Fec. Emision:</label>
+        <input type="date" name="fec_emision" placeholder="Ingrese fecha de emision" id="fec_emision" required>
+      </div>
+      <div class="input">
+        <label for="path_imagen">Imagen:</label>
+        <input type="text" name="path_imagen" placeholder="Ingrese el path de la imagen de la estampilla " id="path_imagen" required> 
+      </div>  
+        <button type="submit">Agregar Estampilla</button> 
+    </div>
+  </form>
+</section>  
+

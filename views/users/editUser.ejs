@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs') %> 
+<section> 
+  <form action="editUser" method="post">
+    <div>
+      <h2>Editar Usuario</h2>  
+      <div  >
+      
+      <input type="text" name ="id" value="Nro id <%= user.id %>" id="id" readonly="readonly">
+      </div>
+
+      <div class="input">
+        <img src="../../img/iconos/sobre.png" alt="user icon">
+         
+        <input type="email" name="email" placeholder="Ingrese su email" id="email" value="<%= user.email %>" required> 
+      </div>  
+      <div class="input">
+        <img src="../../img/iconos/persona.png" alt="user icon">
+        
+        <input type="text" name="nombyApell" placeholder="Ingrese su nombre y apellido" id="nombyApell" value="<%= user.nombyApell %>" required>
+      </div>
+      <div class="input">
+        <img src="../../img/iconos/calendar_view_day.png" alt="user icon">
+        
+        <input type="date" name="fecnac" placeholder="Ingrese fecha de nacimiento" id="fecnac" value="<%=user.fecnac%>" required>
+      </div>
+      <div class="input">
+        <img src="../../img/iconos/llave.png" alt="user icon">
+         
+        <input type="password" name="password" placeholder="Ingrese su contraseña" id="password" required>
+      </div>
+      <div class="input">
+        <img src="../../img/iconos/telefono1.png" alt="user icon">
+       
+        <input type="text" name="celular" placeholder="Ingrese su nro de celular" id="celular" value="<%= user.celular %>" >
+      </div>
+
+      <button type="submit">Modificar usuario</button> 
+    </div>      
+
+   </form>
+</section>  

@@ -1,0 +1,8 @@
+
+<%- include('./partials/header.ejs') %> 
+<div>
+    Error <%= err.status %>
+    <% err.messages.forEach(function(error){ %>
+    <p> <%= error.msg %> </p>
+    <%}); %>
+</div>  

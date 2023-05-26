@@ -1,0 +1,37 @@
+
+.bg {
+  background: blueviolet;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.usuario {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.div-usuarios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-user-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
